@@ -5,7 +5,7 @@ import (
 	"text/template"
 )
 
-type Person struct {
+type Person2 struct {
 	//exported field since it begins with a capital letter
 	Name
 	Age int
@@ -26,7 +26,7 @@ func main() {
 
 	//define an instance with required field
 	n := Name{Firstname: "Sagar", Lastname: "Sumit"}
-	p := Person{Name: n, Age: 29}
+	p := Person2{Name: n, Age: 29}
 
 	//merge template ‘t’ with content of ‘p’
 	t.Execute(os.Stdout, p)
